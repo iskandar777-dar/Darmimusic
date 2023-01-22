@@ -17,7 +17,7 @@ import config
 from ..logging import LOGGER
 
 
-class Darmimusic(Client):
+class DarmiBot(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Memulai Bot")
         super().__init__(

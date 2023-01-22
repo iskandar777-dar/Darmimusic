@@ -8,7 +8,7 @@
 # All rights reserved.
 
 
-from Darmimusic.core import bot
+from Darmimusic.core.bot import DarmiBot
 from Darmimusic.core.dir import dirr
 from Darmimusic.core.git import git
 from Darmimusic.core.userbot import Userbot
@@ -32,7 +32,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = bot()
+app = DarmiBot()
 
 # Assistant Client
 userbot = Userbot()

@@ -17,14 +17,14 @@ from pyrogram import filters
 load_dotenv()
 
 # Dapatkan dari my.telegram.org
-API_ID = int(getenv("API_ID", ""))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "9894136"))
+API_HASH = getenv("API_HASH", "b2c0593b734249a1b27589e93707d776")
 
 # Dapatkan dari @Botfather di Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "5661784900:AAHRsreMNSArNM2uU-auqG4pWTWY9LYQdp4")
 
 # Basis data untuk menyimpan obrolan dan statistik Anda... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://dano1:dano1@cluster0.ajshk2h.mongodb.net/?retryWrites=true&w=majority")
 
 # Durasi audio (musik) maks khusus untuk obrolan suara. setel DURATION_LIMIT dalam variabel dengan waktu Anda sendiri (menit), Default ke 60 menit.
 DURATION_LIMIT_MIN = int(
@@ -37,14 +37,14 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Ingatlah untuk memberi nilai dalam Menit
 
 # Anda memerlukan ID Grup Pribadi untuk ini.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001771438298"))
 
 # Nama untuk bot Musik Anda.
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Darmimusik")
 
 # ID Pengguna Anda.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "").split())
+    map(int, getenv("OWNER_ID", "2099942562").split())
 )  # Jenis input harus interger
 
 # Dapatkan dari http://dashboard.heroku.com/account
@@ -58,7 +58,7 @@ UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
     "https://github.com/iskandar777-dar/Darmimusik",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main", "master")
 
 # GIT TOKEN (jika repo Anda yang diedit bersifat pribadi)
 GIT_TOKEN = getenv("GIT_TOKEN", None)
@@ -72,7 +72,7 @@ SUPPORT_GROUP = getenv(
 )  # Contoh:- https://t.me/medSupportt
 
 # Setel ke True jika Anda ingin meninggalkan asisten Anda setelah jangka waktu tertentu. [Setel waktu melalui AUTO_LEAVE_ASSISTANT_TIME]
-AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", None)
+AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "True")
 
 # Waktu setelah akun asisten Anda akan meninggalkan obrolan secara otomatis.
 AUTO_LEAVE_ASSISTANT_TIME = int(
@@ -85,7 +85,7 @@ AUTO_SUGGESTION_TIME = int(
 )  # Ingatlah untuk memberi nilai dalam Detik
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
-AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", None)
+AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", "True")
 
 # Set it True if you want to bot to suggest about bot commands to random chats of your bots.
 AUTO_SUGGESTION_MODE = getenv("AUTO_SUGGESTION_MODE", None)

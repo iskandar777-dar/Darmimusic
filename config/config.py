@@ -37,7 +37,7 @@ SONG_DOWNLOAD_DURATION = int(
 )  # Ingatlah untuk memberi nilai dalam Menit
 
 # Anda memerlukan ID Grup Pribadi untuk ini.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001771438298"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001546280719"))
 
 # Nama untuk bot Musik Anda.
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "Darmimusik")
